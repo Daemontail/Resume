@@ -1,0 +1,119 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+
+
+<style type="text/css"> 
+body{background-image:url("BG.png");}
+
+
+h1{
+text-align:center;
+color:white;
+font-family: Bahnschrift;
+font-size:50px;
+padding:50px;
+text-shadow: 0px 0px 6px white;
+}
+
+h2{
+  text-align:right;
+  color:white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+}
+
+div.text_properties{
+  text-align: left;
+  color:white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  position: fixed;
+  top: 250;
+  left: 600;
+}
+
+img{
+position:fixed;
+top:225px;
+left:100px;
+height: 450px;
+width: 450px;
+}
+
+
+.button:hover{
+  background-color: rgb(255, 255, 255);
+  color:#393535;
+  box-shadow: 0px 0px 10px rgb(255, 255, 255),0px 0px 10px rgb(255, 255, 255);
+}
+
+.button:focus{
+  background-color: rgb(255, 255, 255);
+  color:#393535;
+  box-shadow: 0px 0px 10px rgb(255, 255, 255),0px 0px 10px rgb(255, 255, 255);
+}
+
+.buttonpos{
+  position:fixed;
+  top:150px;
+  right:300px;
+}
+
+.button{  
+background-color:#393535;
+border-radius: 16px;
+font-size:30px;
+border:none;
+padding: 10px 30px;
+transition-duration: 0.4s;
+}
+
+</style>
+
+<script>
+ function text_aboutme() {
+  document.getElementById("text").innerHTML = "Hi! I'm Gurtej Singh, an aspiring developer with a </br> love of tech and all things digital. ";
+}
+ function text_skills() {
+  document.getElementById("text").innerHTML = "CORE SKILLS:</br> -Back End: C++,Java,Python </br> -Front End: HTML,CSS,JavaScript</br> ADDITIONAL SKILLS:</br> -Photoshop</br>-B1 Level French</br> SOFT SKILLS:</br>-Excellent communication skills</br>-Ability to quickly pick up and </br>familiarise self with new software";
+}
+function text_education() {
+  document.getElementById("text").innerHTML = " -BSc. (Hons) Computer Science: Sri Guru Tegh </br> Bahadur Khalsa College- University of Delhi</br> -CBSE: Bluebells School International </br> -French: Aliiance Francaise New Delhi";
+}
+function text_contact() {
+  document.getElementById("text").innerHTML = " Email: gurtejs169@gmail.com </br> Mobile: +91 9999632436 </br> ";
+}
+</script>
+<title> Gurtej Singh </title>
+<link rel="icon" type="image/x-icon" href="Icon.png">
+</head> 
+
+<body>
+<h1><strong>GURTEJ SINGH.</strong></h1>
+<div class="hidden-xs hidden-sm">
+<div class="col-lg-6k">
+<img src = "Portrait.png" alt = "Portrait of GURTEJ SINGH" width = "400" height = "400" object-position:400px 30px;>
+</div>
+</div>
+<div class="buttonpos">
+<button type="button" class="btn btn-primary btn-lg button" onclick="text_aboutme()">
+<span class="glyphicon glyphicon-user"></span>
+</button>
+<button type="button" class="btn btn-primary btn-lg button" onclick="text_skills()">
+<span class="glyphicon glyphicon-wrench"></span>
+</button>
+<button type="button" class="btn btn-primary btn-lg button" onclick="text_education()">
+<span class="glyphicon glyphicon-education"></span>
+</button>
+<button type="button" class="btn btn-primary btn-lg button" onclick="text_contact()">
+  <span class="glyphicon glyphicon-earphone"></span>
+  </button>
+</div>
+<div class="text_properties" id="text">  </div>
+</body>
+</html>
